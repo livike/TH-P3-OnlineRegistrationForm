@@ -109,19 +109,16 @@ input:focus,
 	height: 100px;
 	margin-bottom: 25px;
 }
-
-::-webkit-input-placeholder { 
-	text-align:right;
+input[placeholder]{ 
+	text-align:left;
 	font-style: italic;
-	padding-right: 5px;
+	padding-right: 10px;
 	color:#aaa;
  }
-input:-moz-placeholder { 
-	text-align:right;
-	font-style: italic; 
-	padding-right: 5px;
-	color:#aaa;
-}
+ input:required{
+ 	text-align: right;
+ }
+
 input[type="checkbox"],
 input[type="radio"]{
 	display:inline-block;

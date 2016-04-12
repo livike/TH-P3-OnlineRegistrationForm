@@ -1,0 +1,209 @@
+/* ================================= 
+  Basic Styles
+==================================== */
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+	font-family: 'Varela-Round', sans-serif;
+	line-height: 1.3em;
+	/**/
+	background:#596778;
+	color:#aaa;
+}
+
+header{
+	background-color: #20aae5;
+	text-transform: uppercase;
+	text-align: center;
+	color:#fff;
+	padding:20px;
+}
+hr{
+	border: none;
+	background-color:black;
+	
+}
+
+.thick{
+	height:4px;
+	margin:10px 0 4px;
+}
+.thin{
+	height: 2px;
+	margin:3px 0 0;
+}
+fieldset{
+	border:none;
+}
+
+h2{
+	font-weight: bold;
+	display:block;
+	height: 80px;
+	text-align: center;
+	background: #f7f7f7;
+	padding:30px 15px;
+	margin:0 -12px 15px;
+
+}
+.margintop{
+	margin-top:35px;
+}
+.heading{
+	color: #fff;
+}
+
+.icon{
+	display: inline-block;
+	background: red;
+	width:20px;
+
+}
+#sign-up{
+	position: relative;
+	background:#fff;
+	border-radius:10px;
+	margin:0;
+}
+#sign-up::before{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%, #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%, #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+	border-radius: 15px 15px 0 0;
+	height:8px;
+	margin-bottom:10px;
+
+}
+.contact-info label{
+	display:inline-block;
+	padding-top:10px;
+	margin-top:10px;
+	height:48px;
+}
+
+input,
+.state-select,
+#other-topics{
+	width:100%;
+	border: 2px solid #ebebeb;
+	background:#fff;
+	border-radius: 4px;
+	height:50px;
+	padding:5px;
+	box-shadow: inset 0 -2px #ebebeb;
+}
+input:focus,
+#other-topics:focus,
+.state-select:focus{
+	border: 1px solid #669ae1;
+	color: #669ae1;
+}
+
+#other-topics{
+	height: 100px;
+	margin-bottom: 25px;
+}
+
+::-webkit-input-placeholder { 
+	text-align:right;
+	font-style: italic;
+	padding-right: 5px;
+	color:#aaa;
+ }
+input:-moz-placeholder { 
+	text-align:right;
+	font-style: italic; 
+	padding-right: 5px;
+	color:#aaa;
+}
+input[type="checkbox"],
+input[type="radio"]{
+	display:inline-block;
+	width:18px;
+	height: 18px;
+	border-radius: 4px;
+	cursor:pointer;
+	box-shadow: none;
+	margin-bottom:10px;
+}
+.newsletter label{
+	display: inline-block;
+}
+
+#zip{
+	width:150px;
+	display:block;
+}
+
+.submit-button{
+	width:100%;
+	font-size: 22px;
+	color:#fff;
+	background-color:#f0776c;
+	border:0;
+	border-bottom: 2px solid #d76b60;
+	border-radius: 4px;
+	box-shadow:inset 0 -2px #d76b60;
+	cursor:pointer;
+	margin-bottom: 15px;
+}
+
+.padding{
+	padding:1px 0;
+}
+.copyright{
+	text-align: center;
+}
+
+/* ================================= 
+  Basic Layout
+==================================== */
+
+
+.container{
+	width:80%;
+	margin:auto;
+}
+.heading{
+	text-align: center;
+	padding-bottom:30px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media(min-width: 769px){
+
+.container{
+	width:60%;
+	}
+.contact-info label{
+	width:25%;
+	margin-top:15px;
+}
+.contact-info input,
+.state-select{
+	width:74%;
+	margin-top:15px;
+}
+#zip{
+	display:inline-block;
+}
+
+fieldset{
+	margin:0 15px;
+}
+h2{
+	margin:0 -25px 15px;
+}
+
+
+}

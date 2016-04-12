@@ -175,12 +175,14 @@ input[type="radio"]{
 	padding-bottom:30px;
 }
 
-
+legend{
+	display: none;
+}
 /* ================================= 
   Media Queries
 ==================================== */
 
-@media(min-width: 769px){
+@media(min-width: 760px){
 
 .container{
 	width:60%;

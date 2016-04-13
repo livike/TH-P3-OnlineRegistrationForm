@@ -87,9 +87,26 @@ h2{
 	height:48px;
 }
 
+::-webkit-input-placeholder,
+::-moz-placeholder{ 
+	text-align:left;
+	font-style: italic;
+	padding-right: 10px;
+	color:#aaa;
+ }
+
+ input:required::-webkit-input-placeholder{
+ 	text-align: right;
+ }
+
+ input:required::-moz-placeholder{
+ 	text-align: right;
+ }
+
 input,
 .state-select,
 #other-topics{
+	transition: all 0.50s ease-in-out;
 	width:100%;
 	border: 2px solid #ebebeb;
 	background:#fff;
@@ -103,21 +120,13 @@ input:focus,
 .state-select:focus{
 	border: 1px solid #669ae1;
 	color: #669ae1;
+	background-color: #E8F0FA;
 }
 
 #other-topics{
 	height: 100px;
 	margin-bottom: 25px;
 }
-input[placeholder]{ 
-	text-align:left;
-	font-style: italic;
-	padding-right: 10px;
-	color:#aaa;
- }
- input:required{
- 	text-align: right;
- }
 
 input[type="checkbox"],
 input[type="radio"]{

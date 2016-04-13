@@ -184,6 +184,7 @@ input[type="radio"]{
 legend{
 	display: none;
 }
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -213,5 +214,8 @@ h2{
 	margin:0 -25px 15px;
 }
 
+input[list]{
+	width:300px;
+}
 
 }
